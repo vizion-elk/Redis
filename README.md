@@ -34,7 +34,7 @@ The Redis ```slowlog``` fileset was tested with Redis 3.0.2 and 2.4.6. We expect
 1) Enter the following script into the console using elevated privileges
 
 ```
-curl https://github.com/vizionelkhelp/vizion.ai/blob/master/beat-install-scripts/install-config-redis.sh > install-config-redis.sh; chmod a+x  install-config-redis.sh; ./install-config-redis.sh _PLACEHOLDER_API_ENDPOINT_
+curl https://github.com/vizion-elk/vizion.ai/blob/7.7.0/beat-install-scripts/install-config-redis.sh > install-config-redis.sh; chmod a+x  install-config-redis.sh; ./install-config-redis.sh _PLACEHOLDER_API_ENDPOINT_ _PLACEHOLDER_KIBANA_URL_
 ```
 
 2) When prompted, select the proper environment to complete the installation.
@@ -65,10 +65,10 @@ service filebeat restart
 
 <i>If you haven't already installed filebeat...</i>
 
-1) As administrator, enter the following command in Powershell or download the zip file [here](https://github.com/vizionelkhelp/Filebeat-Modules/archive/master.zip).
+1) As administrator, enter the following command in Powershell or download the zip file [here](https://github.com/vizion-elk/Filebeat/archive/7.7.0.zip).
 
 ```
-Start-BitsTransfer -Source 'https://github.com/vizionelkhelp/Filebeat-Modules/archive/master.zip' -Destination 'C:\Users\Administrator\Downloads\Filebeat-Modules.zip'
+Start-BitsTransfer -Source 'https://github.com/vizion-elk/Filebeat/archive/7.7.0.zip' -Destination "${env:USERPROFILE}\Downloads\filebeat.zip"'
 ```
 
 2) Unzip the package and extract the contents to the `C:/` drive.
